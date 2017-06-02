@@ -28,7 +28,7 @@
     "fortune"
   ],
   "dependencies": {
-    "wikiquote": "0.1.0",
+    "wikiquote": "0.1.2",
     "yargs": "^8.0.1"
   },
   "devDependencies": {
