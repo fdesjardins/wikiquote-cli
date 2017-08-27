@@ -27,6 +27,7 @@
     "terminal",
     "fortune"
   ],
+  "bin": "index.js",
   "dependencies": {
     "wikiquote": "0.1.5",
     "yargs": "^8.0.2"
