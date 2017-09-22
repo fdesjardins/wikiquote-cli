@@ -30,7 +30,7 @@
   "bin": "index.js",
   "dependencies": {
     "wikiquote": "0.1.5",
-    "yargs": "^8.0.2"
+    "yargs": "^9.0.1"
   },
   "devDependencies": {
     "chai": "^4.1.1",
