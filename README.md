@@ -1,6 +1,7 @@
 # wikiquote-cli
 
 [![Build Status][travis-image]][travis-url]
+[![NPM Version][npm-image]][npm-url]
 [![Coverage][coveralls-image]][coveralls-url]
 
 Companion CLI for wikiquote package (https://github.com/fdesjardins/wikiquote)
@@ -58,6 +59,8 @@ $ wikiquote random 'Donald Knuth' | cowsay
 
 MIT © [Forrest Desjardins](https://github.com/fdesjardins)
 
+[npm-url]: https://www.npmjs.com/package/wikiquote-cli
+[npm-image]: https://img.shields.io/npm/v/wikiquote-cli.svg?style=flat
 [travis-url]: https://travis-ci.org/fdesjardins/wikiquote-cli
 [travis-image]: https://img.shields.io/travis/fdesjardins/wikiquote-cli.svg?style=flat
 [coveralls-url]: https://coveralls.io/r/fdesjardins/wikiquote-cli
