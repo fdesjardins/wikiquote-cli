@@ -11,13 +11,41 @@ Companion CLI for wikiquote package (https://github.com/fdesjardins/wikiquote)
 $ npm install -g wikiquote-cli
 ```
 
-## Example
+## Usage
 
 ```
-$ wikiquote random 'Steven Wright' | cowsay
+Get quotes from Wikiquote.
+
+Usage: wikiquote [action] [options]
+
+Commands:
+  wikiquote random [name]  get a random quote from a person
+  wikiquote search [name]  search for a page name
+
+Options:
+  -v, --version  Show version number                                   [boolean]
+  -h, --help     Show help                                             [boolean]
+
+Examples:
+  wikiquote random "Steve Jobs"
+  wikiquote search "bill gates"
+
+```
+
+## Examples
+
+```
+$ wikiquote random 'Donald Knuth' | cowsay
  ________________________________________
-/ A lot of people are afraid of heights; \
-\ not me, I'm afraid of widths.          /
+/ I can’t go to a restaurant and order   \
+| food because I keep looking at the     |
+| fonts on the menu.                     |
+|                                        |
+| Knuth, Donald (2002). "All Questions   |
+| Answered" (PDF). Notices of the AMS 49 |
+| (3): 321.                              |
+|                                        |
+\ -- Donald Knuth                        /
  ----------------------------------------
         \   ^__^
          \  (oo)\_______
