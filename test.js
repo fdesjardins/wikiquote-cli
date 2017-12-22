@@ -34,6 +34,7 @@ describe('wikiquote', () => {
       const text = await exec('random "Steve Jobss"')
       assert(text.match(/Error: No quotes/))
     })
+
     it('should output errors for the `search` command', async () => {
       const text = await exec('search "Steve Jobss"')
       assert(text.match(/Error: No pages/))
