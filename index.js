@@ -17,7 +17,7 @@ if (require.main === module) {
   cli.demand(1)
 }
 
-const argv = cli.argv
+module.exports = cli.argv
 
 // const options = {
 //   action: argv._[0],
