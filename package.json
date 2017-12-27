@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "recache": "^0.4.3-0",
-    "wikiquote": "0.2.0",
+    "wikiquote": "0.3.1",
     "yargs": "^10.0.3"
   },
   "devDependencies": {
