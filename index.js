@@ -13,6 +13,7 @@ let cli = yargs
   .example('wikiquote search "bill gates"')
   .help('help').alias('h', 'help')
   .version('v', pkg.version).alias('v', 'version')
+  .completion('completion')
 
 if (require.main === module) {
   cli.demand(1)

@@ -15,6 +15,8 @@ $ npm install -g wikiquote-cli
 ## Usage
 
 ```
+$ wikiquote -h
+
 Get quotes from Wikiquote.
 
 Usage: wikiquote [action] [options]
@@ -22,10 +24,11 @@ Usage: wikiquote [action] [options]
 Commands:
   wikiquote random [name]  get a random quote from a person
   wikiquote search [name]  search for a page name
+  wikiquote completion     generate bash completion script
 
 Options:
-  -v, --version  Show version number                                   [boolean]
-  -h, --help     Show help                                             [boolean]
+  -v, --version  Show version number
+  -h, --help     Show help
 
 Examples:
   wikiquote random "Steve Jobs"
