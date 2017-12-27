@@ -1,6 +1,6 @@
 {
   "name": "wikiquote-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Companion CLI for wikiquote package",
   "main": "index.js",
   "scripts": {
