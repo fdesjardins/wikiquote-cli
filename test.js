@@ -27,6 +27,11 @@ describe('wikiquote', () => {
       const text = await exec('search "Steve Jobs"')
       assert(text.match(/Title: Steve Jobs/))
     })
+
+    it('should have a `list` command', async () => {
+      const text = await exec('list "Steve Jobs"')
+      assert(text.split('\n\n--\n\n').length > 0)
+    })
   })
 
   describe('command errors', () => {
@@ -37,6 +42,11 @@ describe('wikiquote', () => {
 
     it('should output errors for the `search` command', async () => {
       const text = await exec('search "Steve Jobss"')
+      assert(text.match(/Error: No pages/))
+    })
+
+    it('should output errors for the `list` command', async () => {
+      const text = await exec('list "Steve Jobss"')
       assert(text.match(/Error: No pages/))
     })
   })

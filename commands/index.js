@@ -1,4 +1,5 @@
 module.exports = {
   search: require('./search'),
-  random: require('./random')
+  random: require('./random'),
+  list: require('./list')
 }

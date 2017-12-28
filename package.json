@@ -4,7 +4,7 @@
   "description": "Companion CLI for wikiquote package",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/standard *.js && nyc ./node_modules/.bin/mocha --opts mocha.opts test.js"
+    "test": "./node_modules/.bin/standard *.js && nyc ./node_modules/.bin/mocha --opts mocha.opts test.js --timeout 5000"
   },
   "license": "MIT",
   "repository": "fdesjardins/wikiquote-cli",
@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "recache": "^0.4.3-0",
-    "wikiquote": "0.3.1",
+    "wikiquote": "0.4.0",
     "yargs": "^10.0.3"
   },
   "devDependencies": {
