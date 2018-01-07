@@ -3,3 +3,7 @@ npm-debug.log
 
 coverage/
 .nyc_output
+
+.wikiquote-cache
+
+yarn.lock
