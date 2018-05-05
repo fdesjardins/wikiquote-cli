@@ -66,21 +66,18 @@ $ time wikiquote random 'Abraham Lincoln'
 Use with other programs:
 
 ```sh
-$ wikiquote random 'Donald Knuth' | cowsay
-#  ___________________________________________________________
-# / I speak to everyone in the same way, whether he is the    \
-# | garbage man or the president of the university.           |
-# |                                                           |
-# | Attributed to Einstein by his colleague Léopold Infeld in |
-# | his book Quest: An Autobiography (1949), p. 291           |
-# |                                                           |
-# \ -- Albert Einstein                                        /
-#  -----------------------------------------------------------
-#         \   ^__^
-#          \  (oo)\_______
-#             (__)\       )\/\
-#                 ||----w |
-#                 ||     ||
+$ wikiquote random "Nikola Tesla" | cowsay
+ _________________________________________
+/ We crave for new sensations but soon    \
+| become indifferent to them. The wonders |
+| of yesterday are today common           |
+\ occurrences. -- Nikola Tesla            /
+ -----------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
 ```
 
 ## License
