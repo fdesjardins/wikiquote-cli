@@ -5,7 +5,7 @@ const command = 'random <name> [options]'
 
 const description = 'get a random quote from a page'
 
-const builder = (yargs) => {
+const builder = yargs => {
   yargs.positional('name', {
     alias: 'n',
     type: 'string',
@@ -25,7 +25,7 @@ const builder = (yargs) => {
 
 const toPlain = (quote, name) => `${quote} -- ${name}`
 
-const help = (name) => `\
+const help = name => `\
 Error: No quotes found matching the name "${name}".
 
 This command is case sensitive.
@@ -33,7 +33,7 @@ This command is case sensitive.
 Try searching first using \`wikiquote search [name]\` and using the "Title"
 field value returned as the [name] in the \`wikiquote random\` command.`
 
-const handler = async (argv) => {
+const handler = async argv => {
   let quotes
 
   if (argv.noCache === false) {
@@ -48,12 +48,17 @@ const handler = async (argv) => {
     }
   }
 
-  if (argv.maxLength && argv.maxLength > 0) {
+  if (quotes && argv.maxLength && argv.maxLength > 0) {
     quotes = quotes.filter(q => q.quote.length < argv.maxLength)
   }
 
-  if (quotes.length > 0) {
-    console.log(toPlain(quotes[Math.floor(Math.random() * quotes.length)].quote, argv.name))
+  if (quotes && quotes.length > 0) {
+    console.log(
+      toPlain(
+        quotes[Math.floor(Math.random() * quotes.length)].quote,
+        argv.name
+      )
+    )
   } else {
     console.log(help(argv.name))
   }
