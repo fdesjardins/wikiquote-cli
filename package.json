@@ -1,7 +1,7 @@
 {
   "name": "wikiquote-cli",
   "description": "Companion CLI for wikiquote package",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "author": {
     "name": "Forrest Desjardins",
     "email": "desjardinsfg@gmail.com",
